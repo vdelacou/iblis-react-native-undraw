@@ -24,7 +24,7 @@ For this project I want the following requirements :
 
 All props can be found here
 
-- [Properties](https://github.com/vdelacou/iblis-react-native-undraw/blob/master/src/iblis_react__native_undraw_props/index.ts)
+- [Properties](https://github.com/vdelacou/iblis-react-native-undraw/blob/master/src/iblis_react_native_undraw_props/index.ts)
 
 Basic Usage
 

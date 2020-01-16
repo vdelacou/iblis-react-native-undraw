@@ -1,6 +1,6 @@
 {
   "name": "iblis-react-native-undraw",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "Apache-2.0",
   "author": "DELACOURT Vincent <vincent.delacourt@gmail.com>",
   "description": "React Native component library for undraw.co (901 illustrations)",
@@ -58,8 +58,9 @@
     "babel-eslint": "latest",
     "babel-loader": "latest",
     "eslint": "latest",
+    "eslint-plugin-react-hooks": "1.x",
     "husky": "latest",
-    "react": "latest",
+    "react": "16.9.0",
     "react-docgen-typescript-loader": "latest",
     "react-native": "latest",
     "react-native-svg": "latest",
@@ -74,6 +75,8 @@
     "tslint-etc": "latest",
     "tslint-react": "latest",
     "tslint-react-hooks": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "webpack": "^4.41.5",
+    "mem": ">=4.0.0"
   }
 }
