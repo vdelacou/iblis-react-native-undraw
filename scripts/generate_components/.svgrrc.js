@@ -16,6 +16,7 @@ module.exports = {
     return typeScriptTpl.ast`
       import React from 'react';
       import { LinearGradient } from '../hack/linear_gradient';
+      import { RadialGradient } from '../hack/radial_gradient';
       import { ClipPath } from '../hack/clip_path';
       import { IIblisReactNativeUndrawProps } from '../iblis_react_native_undraw_props';
       import Svg, { SvgProps } from 'react-native-svg';

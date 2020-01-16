@@ -4,6 +4,7 @@
     "target": "es5",
     "module": "esNext",
     "lib": ["dom", "esnext"],
+    "types": ["react", "jest"],
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
@@ -24,7 +25,7 @@
     "paths": {
       "*": ["src/*", "node_modules/*"]
     },
-    "jsx": "react",
+    "jsx": "react-native",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
@@ -33,6 +34,7 @@
     "pretty": true,
     "suppressImplicitAnyIndexErrors": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "outDir": "dist"
   },
   "exclude": ["src/test/*"]

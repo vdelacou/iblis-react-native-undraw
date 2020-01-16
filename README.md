@@ -85,7 +85,6 @@ Then generate the typescript components
 ```
 cd ../generate_components/
 npx @svgr/cli --config-file .svgrrc.js --native --ext tsx --out-dir ../../src/components ../scrap_website/undraw
-npx create-ts-index create ../../src ../../src/components
 ```
 
 Then add the new components in `src/index.ts`
@@ -93,6 +92,13 @@ Then add the new components in `src/index.ts`
 Build the library
 
 `npm run tsc`
+
+or
+
+```
+export NODE_OPTIONS=--max_old_space_size=4096
+npm run build
+```
 
 ## Contribute
 
