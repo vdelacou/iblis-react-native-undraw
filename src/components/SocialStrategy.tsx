@@ -1,6 +1,7 @@
 import React from 'react';
-import Svg, { Circle, Defs, G, Path, RadialGradient, Rect, Stop, SvgProps } from 'react-native-svg';
+import Svg, { Circle, Defs, G, Path, Rect, Stop, SvgProps } from 'react-native-svg';
 import { LinearGradient } from '../hack/linear_gradient';
+import { RadialGradient } from '../hack/radial_gradient';
 import { IIblisReactNativeUndrawProps } from '../iblis_react_native_undraw_props';
 export const SvgSocialStrategy = (props: IIblisReactNativeUndrawProps & SvgProps) => (
   <Svg data-name="Layer 1" viewBox="0 0 1048.46 788.72" style={props.style} width="100%" height={props.height} {...props}>

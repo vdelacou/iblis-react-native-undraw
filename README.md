@@ -1,6 +1,6 @@
 # Iblis React Native Undraw
 
-_**React Native component library for undraw.co (1027 illustrations)**_
+_**React Native component library for undraw.co (1263 illustrations)**_
 
 [![NPM version](https://badge.fury.io/js/iblis-react-native-undraw.svg)](https://www.npmjs.com/package/iblis-react-native-undraw)
 
