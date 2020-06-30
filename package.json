@@ -1,6 +1,6 @@
 {
   "name": "iblis-react-native-undraw",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "Apache-2.0",
   "author": "DELACOURT Vincent <vincent.delacourt@gmail.com>",
   "description": "React Native component library for undraw.co (1263 illustrations)",
@@ -15,9 +15,9 @@
     "url": "git@github.com:vdelacou/iblis-react--native-undraw.git"
   },
   "bugs": {
-    "url": "https://github.com/vdelacou/iblis-react--native-undraw/issues"
+    "url": "https://github.com/vdelacou/iblis-react-native-undraw/issues"
   },
-  "homepage": "https://github.com/vdelacou/iblis-react--native-undraw#readme",
+  "homepage": "https://github.com/vdelacou/iblis-react-native-undraw#readme",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
