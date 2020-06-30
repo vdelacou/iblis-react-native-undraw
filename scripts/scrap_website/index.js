@@ -30,7 +30,7 @@ const main = async () => {
 
   page.setDefaultTimeout(60000);
 
-  await page.setViewport({ width: 1366, height: 768 });
+  await page.setViewport({ width: 1566, height: 768 });
 
   await page.goto(url, { waitUntil: 'networkidle0' });
 
@@ -39,20 +39,18 @@ const main = async () => {
   console.log('Page loaded');
 
   const images_url = await page.evaluate(() =>
-    Array.from(document.getElementsByClassName('item__image'), element => {
-      return { url: element.getAttribute('src'), name: element.getAttribute('alt') };
+    Array.from(document.getElementsByClassName('gridItem'), element => {
+      if(element.firstElementChild && element.lastElementChild ){
+        return { svg: element.firstElementChild.innerHTML, name: element.lastElementChild.textContent };
+      }
     })
   );
 
-  console.log('Result: ' + JSON.stringify(images_url));
-
-  images_url.forEach(imageUrl => {
-    download(imageUrl.url, `./undraw/${changeCase.pascalCase(imageUrl.name)}.svg`, function() {
-      console.log(`Image ${changeCase.pascalCase(imageUrl.name)} downloaded`);
-    });
+  images_url.filter(value => !!value).forEach(imageUrl => {
+    fs.writeFileSync(`./undraw/${changeCase.pascalCase(imageUrl.name)}.svg`, imageUrl.svg)
   });
 
-  console.log(`${images_url.length} Image downloaded`);
+  console.log(`${images_url.filter(value => !!value).length} Image downloaded`);
 
   await browser.close();
 };
