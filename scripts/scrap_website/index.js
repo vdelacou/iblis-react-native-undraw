@@ -41,6 +41,7 @@ const main = async () => {
   const images_url = await page.evaluate(() =>
     Array.from(document.getElementsByClassName('gridItem'), element => {
       if(element.firstElementChild && element.lastElementChild ){
+        element.firstElementChild.firstElementChild.removeAttribute('class')
         return { svg: element.firstElementChild.innerHTML, name: element.lastElementChild.textContent };
       }
     })
